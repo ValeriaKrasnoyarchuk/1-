@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Задание первое </title>
+</head>
+<body>
+    <h1> Гиперссылки </h1>
+    <li><a href="http://example.com/"target="_blanc"> Абсолютная ссылка на сайт example.com</a></li>
+    <li><a href="https://example.com"target="_blanc"> Aбсолютная на главную сайта example.com в протоколе https</a></li>
+    <li><a href="ftp://example.com/file.zip"target="_blanc"> Ссылка на файл на сервере FTP без авторизации</a></li>
+    <li><a href="ftp://user:password@example.com"target="_blanc"> Ссылка на файл на сервере FTP с авторизацией</a></li>
+    <li><a href="https://example#fragment"target="_blanc"> Ссылка на фрагмент страницы некоторого сайта</a></li>
+    
+    <li><a href="#element_id"target="_blanc"> Ссылка на фрагмент текущей страницы</a></li>
+    
+    
+    <li><a href="http://example.com/page=1&perpage=20"target="_blanc"> Ссылка с двумя параметрами в URL</a></li>
+    <li><a href="  "target="_blanc"> Ссылка с пустым href</a></li>
+    <li><a href="https://example.com"target="_blanc" rel="notfollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href=""target="_blanc"> <noindex>Запрещенная для индексации поисковиками</noindex></a></li>
+    <li><a href="image.jpg"target="_blanc"> Ссылка-изображение</a></li>
+    <map name="knopka">
+        <li><a href="image.jpg"target="_blanc"> ссылки из прямоугольных и круглых областей картинки (HTML-тег map)</a></li>
+        <area shape="rect" coords="10,10,50,50" href="image.jpg" alt="Подсказка">
+        </map>
+        
+        <img src= usemap="#knopka">
+        <map name="knopka">
+            <li><a href="image.jpg"target="_blanc"> Вторая</a></li>
+            <area shape="circle" coords="10,10,50,50" href="image.jpg" alt="Подсказка">
+            </map>
+            
+            <img src= usemap="#knopka">
+    <li><a href="/about"target="_blanc"> относительную на страницу в текущем каталоге</a></li>
+    <li><a href="about"target="_blanc"> относительную на страницу в каталоге about</a></li>
+    <li><a href="../news/html"target="_blanc"> относительную на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../news"target="_blanc"> относительную на страницу в каталоге двумя уровнями выше</a></li>
+    <li><a href="/"target="_blanc"> сокращенную на главную</a></li>
+</body>
+</html>
+
+

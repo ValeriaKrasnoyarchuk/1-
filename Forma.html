@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Форма HTML</title>
+  </head>
+  <body>
+    <h1> Форма HTML</h1>
+    <form action="/" method="POST">
+
+      <label>
+        Укажите свое имя и фамилию:<br>
+        <input name="field-name-1" placeholder="Имя Фамилия">
+      </label><br>
+      <label>
+        Укажите e-mail:<br>
+        <input name="field-email" placeholder="e-mail:" type="email">
+      </label><br>
+      <label>
+        Дата рождения:<br>
+        <input name="field-date" placeholder="2021.01.01" type="date">
+      </label><br>
+  
+        Выбирете пол:<br>
+        <select name="field-name-3">
+          <option value="Значение1">Мужчина</option>
+          <option value="Значение2">Женщина</option>
+          <option value="Значение3" selected="selected">Не выбрано</option>
+        </select>
+      </label><br>
+      <label>
+       Ваши сверхспособности:
+        <br>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+          <option value="Значение3" selected="selected">левитация</option>
+        </select>
+      </label><br>
+      <label>
+        Биография:<br>
+         <textarea name="field-name-2" placeholder=Текст...></textarea>
+       </label><br>
+       <label>
+        С контрактом ознакомлен (а) :<br>
+      <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+        Ознакомлен(а) </label>
+      <label><input type="radio" name="radio-group-1" value="Значение2">
+        Не ознакомлен(а) </label><br>
+      Согласие на обработку:<br>
+      <label><input type="checkbox" checked="checked" name="check-1">
+       Принимаю</label><br>
+      
+      <input type="submit" value="Отправить">
+    </form>
+</body></html>
